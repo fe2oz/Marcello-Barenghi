@@ -9,10 +9,10 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/swipebox.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="js/header.js"></script>
     <script src="js/slide_choice.js"></script>
@@ -78,9 +78,9 @@
 
     </header>
 
-    <div id="slider">
+    <div id="slider" >
         <div class="large_slide_image">
-            <img src="img/dessert_glass_drawing_by_marcellobarenghi_d99wchc-fullview.jpg" alt="">
+           <img src="img/dessert_glass_drawing_by_marcellobarenghi_d99wchc-fullview.jpg" alt="">
         </div>
 
         <div class="small_slide_image">
@@ -235,10 +235,10 @@
         </div>
 
         <!-- ===more...=== -->
-            <div class="more" id="more">more ·····</div>
+            <div class="more" id="more">more .....</div>
 
-        <div class="two_section" id="two_section">
-            <a href="#two_section">
+        <div class="two_section" id="ts">
+            <a href="#ts">
                 <div class="two_section_box">
                     <img src="img/cellulare-nokia-picc.jpg" alt="">
                         <div class="tsb_text">
@@ -249,7 +249,7 @@
                 </div>
             </a>
             
-            <a href="#two_section">
+            <a href="#ts">
                 <div class="two_section_box2">
                     <img src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
                         <div class="tsb2_text">
@@ -264,7 +264,7 @@
                 </div>
             </a>
             
-            <a href="#two_section">
+            <a href="#ts">
                 <div class="two_section_box3">
                     <img src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
                         <div class="tsb3_text">
@@ -275,7 +275,7 @@
                 </div>
             </a>
             
-            <a href="#two_section">
+            <a href="#ts">
                 <div class="two_section_box4">
                     <img src="img/computer-samsung-picc.jpg" alt="">
                         <div class="tsb4_text">
@@ -286,7 +286,7 @@
                 </div>
             </a>
             
-            <a href="#two_section">
+            <a href="#ts">
                 <div class="two_section_box5">
                     <img src="img/fichi-picc.jpg" alt="">
                         <div class="tsb5_text">
@@ -297,27 +297,554 @@
                 </div>
             </a>
 
-            <span id="prev">&lt;</span>
-            <span id="next">&gt;</span>
-
-                <!-- ===모달=== -->
-                <div class="two_section_box_modal">
-
-                    <img id="cancle" src="img/cancel.png" alt="">
-
-                    <div class="tsb_modal_content">
-                        <img src="img/cellulare-nokia-picc.jpg">
-                        <p>🖤 Drawing Figs</p>
-                        <div class="tsb_modal_content2">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qL-sfcwyQTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="#ts">
+                <div class="two_section_box6">
+                    <img src="img/squalo-2-picc.jpg" alt="">
+                        <div class="tsb6_text">
+                            <h1>Shark Drawing</h1>
+                            <p>My drawing of a shark
+                                It took me 6 hours</p>
                         </div>
-                    </div>
-
                 </div>
+            </a>
+            
+            <a href="#ts">
+                <div class="two_section_box7">
+                    <img src="img/pizza-2-pic.jpg" alt="">
+                        <div class="tsb7_text">
+                            <h1>Pizza Drawing</h1>
+                            <p>My drawing of a slice of pizza
+                                It took me 5 hours and 10 minutes</p>
+                        </div>
+                </div>
+            </a>
 
+            <a href="#ts">
+                <div class="two_section_box8">
+                    <img src="img/ramen-picc.jpg" alt="">
+                        <div class="tsb8_text">
+                            <h1>Drawing Shin Ramyun</h1>
+                            <p>My drawing of a bag of Korean ramen
+                                It took me 5 and a half hours</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box9">
+                    <img src="img/cell-samsung-picc (1).jpg" alt="">
+                        <div class="tsb9_text">
+                            <h1>Drawing Smartphone</h1>
+                            <p>My drawing of a Galaxy s21
+                                This drawing took me 3 hours and 40 minutes</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box10">
+                    <img src="img/tazza-mms-piccola.jpg" alt="">
+                        <div class="tsb10_text">
+                            <h1>Drawing A Mug</h1>
+                            <p>My drawing of a mug
+                                This drawing took me 6 and a half hours</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box11">
+                    <img src="img/banane-verdi-picc.jpg" alt="">
+                        <div class="tsb11_text">
+                            <h1>Drawing Green Bananas</h1>
+                            <p>My drawing of green bananas
+                                This drawing took me 5 and a half hours</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box12">
+                    <img src="img/paperella-piccola.jpg" alt="">
+                        <div class="tsb12_text">
+                            <h1>Drawing Rubber Duck</h1>
+                            <p>My drawing of a Rubber Duck
+                                This drawing took me 3 hours and 25 minutes</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box13">
+                    <img src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                        <div class="tsb13_text">
+                            <h1>Drawing Egg</h1>
+                            <p>My drawing of a broken egg
+                                This drawing took me 5 and a quarter hours</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box14">
+                    <img src="img/uva-3-piccola-2.jpg" alt="">
+                        <div class="tsb14_text">
+                            <h1>Drawing Egg</h1>
+                            <p>My drawing of a bunch of grapes
+                                This drawing took me 6 hours</p>
+                        </div>
+                </div>
+            </a>
+
+            <a href="#ts">
+                <div class="two_section_box15">
+                    <img src="img/carpa-2-piccola.jpg" alt="">
+                        <div class="tsb15_text">
+                            <h1>Drawing Carp</h1>
+                            <p>My drawing of a fish on green paper
+                                This drawing took me 5 hours and 20 minutes</p>
+                        </div>
+                </div>
+            </a>
             
         </div>
+                <!-- ===모달=== -->
 
+            <div class="modal1">
+                <img id="cancle" src="img/cancel.png" alt="">
+                <div class="modal1_content">
+                    <div>
+                        <img src="img/cellulare-nokia-picc.jpg" alt="">
+                        <p>🖤 Drawing Iconic 3310</p>
+                    </div>
+                        <iframe width="50%" height="100%" src="https://www.youtube.com/embed/qL-sfcwyQTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" onclick="a()" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                    </div>
+                        
+            </div>
+    
+            <div class="modal2">
+                <img id="cancle2" src="img/cancel.png" alt="">
+                <div class="modal2_content">
+                    <div>
+                        <img src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                        <p>🖤 Drawing Jungkook BTS</p>
+                    </div>
+                        <iframe width="50%" height="100%" src="https://www.youtube.com/embed/ZHWwfn-WsyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal3">
+                <img id="cancle3" src="img/cancel.png" alt="">
+                <div class="modal3_content">
+                    <div>
+                        <img src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                        <p>🖤 Drawing Pop Unicorn 2</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/71Nw_PaLBMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal4">
+                <img id="cancle4" src="img/cancel.png" alt="">
+                <div class="modal4_content">
+                    <div>
+                        <img src="img/computer-samsung-picc.jpg" alt="">
+                        <p>🖤 Drawing Laptop</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/y5GHSjzDX4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal5">
+                <img id="cancle5" src="img/cancel.png" alt="">
+                <div class="modal5_content">
+                    <div>
+                        <img src="img/fichi-picc.jpg" alt="">
+                        <p>🖤  Drawing Figs</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/Rq1li7G62Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal6">
+                <img id="cancle6" src="img/cancel.png" alt="">
+                <div class="modal6_content">
+                    <div>
+                        <img src="img/squalo-2-picc.jpg" alt="">
+                        <p>🖤 Shark Drawing</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/DdjEnY6wSO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal7">
+                <img id="cancle7" src="img/cancel.png" alt="">
+                <div class="modal7_content">
+                    <div>
+                        <img src="img/pizza-2-pic.jpg" alt="">
+                        <p>🖤 Pizza Drawing</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/XkOZYHgGfIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal8">
+                <img id="cancle8" src="img/cancel.png" alt="">
+                <div class="modal8_content">
+                    <div>
+                        <img src="img/ramen-picc.jpg" alt="">
+                        <p>🖤 Drawing Shin Ramyun</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/qzzM7mYIot4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal9">
+                <img id="cancle9" src="img/cancel.png" alt="">
+                <div class="modal9_content">
+                    <div>
+                        <img src="img/cell-samsung-picc (1).jpg" alt="">
+                        <p>🖤 Drawing Smartphone</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/3oYl4Km1zSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal10">
+                <img id="cancle10" src="img/cancel.png" alt="">
+                <div class="modal10_content">
+                    <div>
+                        <img src="img/paperella-piccola.jpg" alt="">
+                        <p>🖤 Drawing A Mug</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/i4E5uw4WETQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal11">
+                <img id="cancle11" src="img/cancel.png" alt="">
+                <div class="modal11_content">
+                    <div>
+                        <img src="img/banane-verdi-picc.jpg" alt="">
+                        <p>🖤 Drawing Green Bananas</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/-nNoO35-jlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal12">
+                <img id="cancle12" src="img/cancel.png" alt="">
+                <div class="modal12_content">
+                    <div>
+                        <img src="img/paperella-piccola.jpg" alt="">
+                        <p>🖤 Drawing Rubber Duck</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/mQFrQ9PVG1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal13">
+                <img id="cancle13" src="img/cancel.png" alt="">
+                <div class="modal13_content">
+                    <div>
+                        <img src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                        <p>🖤 Drawing Rubber Duck</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/w-mTv3WBmbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal14">
+                <img id="cancle14" src="img/cancel.png" alt="">
+                <div class="modal14_content">
+                    <div>
+                        <img src="img/uva-3-piccola-2.jpg" alt="">
+                        <p>🖤 Drawing Grapes</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/tUi7Hish_Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
+
+            <div class="modal15">
+                <img id="cancle15" src="img/cancel.png" alt="">
+                <div class="modal15_content">
+                    <div>
+                        <img src="img/carpa-2-piccola.jpg" alt="">
+                        <p>🖤 Drawing Carp</p>
+                    </div>
+                    <iframe width="50%" height="100%" src="https://www.youtube.com/embed/Qw_JlrKOcWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="modal1_content_1">
+                            <img id="c1" src="img/cellulare-nokia-picc.jpg" alt="">
+                            <img id="c2" src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                            <img id="c3" src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                            <img id="c4" src="img/computer-samsung-picc.jpg" alt="">
+                            <img id="c5" src="img/fichi-picc.jpg" alt="">
+                            <img id="c6" src="img/squalo-2-picc.jpg" alt="">
+                            <img id="c7" src="img/pizza-2-pic.jpg" alt="">
+                            <img id="c8" src="img/gelato-cornetto-2-pic.jpg" alt="">
+                            <img id="c9" src="img/ramen-picc.jpg" alt="">
+                            <img id="c10" src="img/cell-samsung-picc (1).jpg" alt="">
+                            <img id="c11" src="img/tazza-mms-piccola.jpg" alt="">
+                            <img id="c12" src="img/banane-verdi-picc.jpg" alt="">
+                            <img id="c13" src="img/paperella-piccola.jpg" alt="">
+                            <img id="c14" src="img/uovo-rotto-3-piccolo.jpg" alt="">
+                            <img id="c15" src="img/uva-3-piccola-2.jpg" alt="">
+                            <img id="c16" src="img/carpa-2-piccola.jpg" alt="">
+                        </div>  
+                </div>
+            </div>
     </div>
 
     <footer></footer>
@@ -338,6 +865,18 @@
         ScrollReveal().reveal('.two_section_box3', {delay: 590});
         ScrollReveal().reveal('.two_section_box4', {delay: 620});
         ScrollReveal().reveal('.two_section_box5', {delay: 650});
+        ScrollReveal().reveal('.two_section_box6', {delay: 680});
+        
+        $('.modal1_content_1').flickity({
+        cellAlign: 'right',
+        contain: true
+        });
+
+        $('#ts').flickity({
+        cellAlign: 'left',
+        contain: true
+        });
+        
     </script>
 
 </body>
