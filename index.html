@@ -11,9 +11,13 @@
     <link href="css/common.css" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/header.js"></script>
     <script src="js/slide_choice.js"></script>
+    <script src="js/slidescroll.js"></script>
+
+    
 </head>
 <body>
     
@@ -27,8 +31,6 @@
         </div>
 
         <nav class="main_menu">
-                <li id="main1"><a href="#">Marcello Barenghi</a></li>
-
                 <li id="main2">
                     <a href="#" class="main2_large">His Paintings ></a>
                     <ul id="main2_small">
@@ -46,6 +48,8 @@
                     </ul>
                 </li>
 
+                <li id="main1"><a href="#">Marcello Barenghi</a></li>
+
                 <li id="main4">
                     <a href="#" class="main4_large">Archive ></a>
                     <ul id="main4_small">
@@ -60,6 +64,8 @@
                         <li><a href="#">2013</a></li>
                     </ul>
                 </li>
+
+                <li id="main5"><a href="#">Art frint</a></li>
 
                 <div class="social_menu_icon">
                     <a href="#"><img src="img/fac_icon.png" alt=""></a>
@@ -85,30 +91,236 @@
                 </div>
             </div>
 
-            <div class="small2">
-                <img src="img/hyperrealistic-drawing-oranges-satisfying-3d-art-Marcello-Barenghi.jpg" alt="">
+            <div class="small2"><img src="img/hyperrealistic-drawing-oranges-satisfying-3d-art-Marcello-Barenghi.jpg" alt="">
                 <div class="small2_text">
                     <h3>Drawing Oranges</h3>
                     <p>2018</p>
                 </div>
             </div>
 
-            <div><img src="img/drawing-italy-seen-from-space-by-Marcello-Barenghi.jpg" alt=""></div>
-            <div><img src="img/hyperrealistic drawing of a amethyst by Marcello Barenghi.jpg" alt=""></div>
-            <div><img src="img/Drawing the Moon - 50th Moon Landing 3d art by Marcello Barenghi.jpg" alt=""></div>
-            <div><img src="img/3D-painting-empty-bag-chips-Cipster-Marcello-Barenghi.jpg" alt=""></div>
-            <div><img src="img/Fan art drawing.jpg" alt=""></div>
-            <div><img src="img/carpe-stagno-piccolo.jpg" alt=""></div>
-            <div><img src="img/pistola-pic.jpg" alt=""></div>
-            <div><img src="img/lampadina-ferro-piccola.jpg" alt=""></div>
-            <div><img src="img/cocktail-piccolo.jpg" alt=""></div>
-            <div><img src="img/labbra-2-piccole.jpg" alt=""></div>
+            <div class="small3">
+                <img src="img/drawing-italy-seen-from-space-by-Marcello-Barenghi.jpg" alt="">
+                <div class="small3_text">
+                    <h3>Drawing Italy</h3>
+                    <p>2020</p>
+                </div>
+            </div>
+
+            <div class="small4">
+                <img src="img/hyperrealistic drawing of a amethyst by Marcello Barenghi.jpg" alt="">
+                <div class="small4_text">
+                    <h3>Drawing Amethyst</h3>
+                    <p>2019</p>
+                </div>
+            </div>
+
+            <div class="small5">
+                <img src="img/Drawing the Moon - 50th Moon Landing 3d art by Marcello Barenghi.jpg" alt="">
+                <div class="small5_text">
+                    <h3>Drawing Moon</h3>
+                    <p>2019</p>
+                </div>
+            </div>
+
+            <div class="small6">
+                <img src="img/3D-painting-empty-bag-chips-Cipster-Marcello-Barenghi.jpg" alt="">
+                <div class="small6_text">
+                    <h3>Empty Chips Bag <br>- Painting On Canvas</h3>
+                    <p>2017</p>
+                </div>
+            </div>
+
+            <div class="small7">
+                <img src="img/Fan art drawing.jpg" alt="">
+                <div class="small7_text">
+                    <h3>Drawing Joker</h3>
+                    <p>2019</p>
+                </div>
+            </div>
+
+            <div class="small8">
+                <img src="img/carpe-stagno-piccolo.jpg" alt="">
+                <div class="small8_text">
+                    <h3>Drawing Carps</h3>
+                    <p>2020</p>
+                </div>
+            </div>
+
+            <div class="small9">
+                <img src="img/pistola-pic.jpg" alt="">
+                <div class="small9_text">
+                    <h3>Drawing Gun</h3>
+                    <p>2021</p>
+                </div>
+            </div>
+
+            <div class="small10">
+                <img src="img/lampadina-ferro-piccola.jpg" alt="">
+                <div class="small10_text">
+                    <h3>Drawing Light Bulb</h3>
+                    <p>2021</p>
+                </div>
+            </div>
+
+            <div class="small11">
+                <img src="img/cocktail-piccolo.jpg" alt="">
+                <div class="small11_text">
+                    <h3>Martini Glass Drawing</h3>
+                    <p>2020</p>
+                </div>
+            </div>
+
+            <div class="small12">
+                <img src="img/labbra-2-piccole.jpg" alt="">
+                <div class="small12_text">
+                    <h3>Kiss Lips Drawing</h3>
+                    <p>2020</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="section"></div>
+    <div class="section">
+
+            <div class="latest_work">latest work</div>
+
+        <!-- ===lates work=== -->
+        <div class="one_section">
+            <div class="one_section_box">
+                <div class="sauce">
+                    <p>Say Sauce Bottle Drawing</p>
+                    <img src="img/soia-picc.jpg" alt="">
+                </div>
+
+                <div class="choco">
+                    <img src="img/gelato-biscotto-picc.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <p>Playing Cards</p>
+                    <img src="img/carte-da-gioco-picc.jpg" alt="">
+                </div>
+               
+            </div>
+
+            <div class="one_section_box2">
+                <div class="bird">
+                    <p>2021</p>
+                    <span>robin bird</span>
+                    <img src="img/robin2-drawing-Marcello-Barenghi.jpg" alt="">
+                </div>
+
+                <div class="gun">
+                    <img src="img/pistola-pic.jpg" alt="">
+                    <p>GUN</p>
+                </div>
+
+                <div class="glass">
+                    <p>King<Br>Glass</p>
+                    <img src="img/bicchiere-oro-king-pic.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="one_section_box3">
+                <div class="diamond">
+                    <img src="img/diamante-rosa-piccolo.jpg" alt="">
+                    <p>Pink Diamond</p>
+                </div>
+
+                <div class="grape">
+                    <img src="img/uva-rossa-gra.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===more...=== -->
+            <div class="more">more ·····</div>
+
+        <div class="two_section">
+            <a href="#">
+                <div class="two_section_box">
+                    <img src="img/cellulare-nokia-picc.jpg" alt="">
+                        <div class="tsb_text">
+                            <h1>Iconic 3310</h1>
+                            <p>My drawing of an old 3310 cell phone<br>
+                                It took me 6 hours</p>
+                        </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="two_section_box2">
+                    <img src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
+                        <div class="tsb2_text">
+                            <h1>Jungkook BTS</h1><br>
+                            <p>My adventure in Seoul is coming to an end, 
+                                my first solo exhibition will end on August 22nd 
+                                and I think it is my duty to draw something Korean ...
+                                 so, since many have asked me to draw BTS, 
+                                 here is the portrait of Jungkook from K-pop group BTS. 
+                                 It took me almost 7 hours</p>
+                        </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="two_section_box3">
+                    <img src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
+                        <div class="tsb3_text">
+                            <h1>Pop Unicorn 2</h1>
+                            <p>My drawing of "Petrichor"
+                                This drawing took me 4 hours and 10 minutes</p>
+                        </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="two_section_box4">
+                    <img src="img/computer-samsung-picc.jpg" alt="">
+                        <div class="tsb4_text">
+                            <h1>Laptop</h1>
+                            <p>My drawing of a laptop
+                                This drawing took me 7 and a half hours</p>
+                        </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="two_section_box5">
+                    <img src="img/fichi-picc.jpg" alt="">
+                        <div class="tsb5_text">
+                            <h1>Figs</h1>
+                            <p>My drawing of some figs
+                                This drawing took me 4 hours and 50 minutes</p>
+                        </div>
+                </div>
+            </a>
+
+                <!-- ===more 모달=== -->
+                <div class="two_section_box_modal">
+                    <div class="tsb_modal_content">
+                        <img src="img/cellulare-nokia-picc.jpg">
+                    </div>
+                    
+                </div>
+        </div>
+
+    </div>
 
     <footer></footer>
+
+    <script>
+        ScrollReveal().reveal('.latest_work', {delay: 250});
+        ScrollReveal().reveal('.sauce', {delay: 300});
+        ScrollReveal().reveal('.bird', {delay: 300});
+        ScrollReveal().reveal('.diamond', {delay: 400});
+        ScrollReveal().reveal('.choco', {delay: 400});
+        ScrollReveal().reveal('.gun', {delay: 400});
+        ScrollReveal().reveal('.card', {delay: 500});
+        ScrollReveal().reveal('.glass', {delay: 500});
+        ScrollReveal().reveal('.grape', {delay: 500});
+        
+    </script>
 
 </body>
 </html>
