@@ -9,13 +9,14 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/swipebox.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/header.js"></script>
     <script src="js/slide_choice.js"></script>
-    <script src="js/slidescroll.js"></script>
+    <script src="js/modal.js"></script>
 
     
 </head>
@@ -234,10 +235,10 @@
         </div>
 
         <!-- ===more...=== -->
-            <div class="more">more ·····</div>
+            <div class="more" id="more">more ·····</div>
 
-        <div class="two_section">
-            <a href="#">
+        <div class="two_section" id="two_section">
+            <a href="#two_section">
                 <div class="two_section_box">
                     <img src="img/cellulare-nokia-picc.jpg" alt="">
                         <div class="tsb_text">
@@ -248,7 +249,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="#two_section">
                 <div class="two_section_box2">
                     <img src="img/bts-Jungkook-drawing-by-Marcello-Barenghi.jpg" alt="">
                         <div class="tsb2_text">
@@ -263,7 +264,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="#two_section">
                 <div class="two_section_box3">
                     <img src="img/unicorno-ceramica-2-piccolo.jpg" alt="">
                         <div class="tsb3_text">
@@ -274,7 +275,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="#two_section">
                 <div class="two_section_box4">
                     <img src="img/computer-samsung-picc.jpg" alt="">
                         <div class="tsb4_text">
@@ -285,7 +286,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="#two_section">
                 <div class="two_section_box5">
                     <img src="img/fichi-picc.jpg" alt="">
                         <div class="tsb5_text">
@@ -296,13 +297,25 @@
                 </div>
             </a>
 
-                <!-- ===more 모달=== -->
+            <span id="prev">&lt;</span>
+            <span id="next">&gt;</span>
+
+                <!-- ===모달=== -->
                 <div class="two_section_box_modal">
+
+                    <img id="cancle" src="img/cancel.png" alt="">
+
                     <div class="tsb_modal_content">
                         <img src="img/cellulare-nokia-picc.jpg">
+                        <p>🖤 Drawing Figs</p>
+                        <div class="tsb_modal_content2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qL-sfcwyQTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    
+
                 </div>
+
+            
         </div>
 
     </div>
@@ -311,15 +324,20 @@
 
     <script>
         ScrollReveal().reveal('.latest_work', {delay: 250});
-        ScrollReveal().reveal('.sauce', {delay: 300});
+        ScrollReveal().reveal('.sauce', {delay: 280});
         ScrollReveal().reveal('.bird', {delay: 300});
-        ScrollReveal().reveal('.diamond', {delay: 400});
-        ScrollReveal().reveal('.choco', {delay: 400});
-        ScrollReveal().reveal('.gun', {delay: 400});
-        ScrollReveal().reveal('.card', {delay: 500});
-        ScrollReveal().reveal('.glass', {delay: 500});
-        ScrollReveal().reveal('.grape', {delay: 500});
-        
+        ScrollReveal().reveal('.diamond', {delay: 320});
+        ScrollReveal().reveal('.choco', {delay: 340});
+        ScrollReveal().reveal('.gun', {delay: 360});
+        ScrollReveal().reveal('.card', {delay: 380});
+        ScrollReveal().reveal('.glass', {delay: 400});
+        ScrollReveal().reveal('.grape', {delay: 420});
+        ScrollReveal().reveal('.grape', {delay: 440});
+        ScrollReveal().reveal('.two_section_box', {delay: 530});
+        ScrollReveal().reveal('.two_section_box2', {delay: 560});
+        ScrollReveal().reveal('.two_section_box3', {delay: 590});
+        ScrollReveal().reveal('.two_section_box4', {delay: 620});
+        ScrollReveal().reveal('.two_section_box5', {delay: 650});
     </script>
 
 </body>

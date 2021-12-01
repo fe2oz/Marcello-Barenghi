@@ -350,6 +350,7 @@ header{
     width:100%; height:65vh;
     background-color:#e9e9e9;
     display:flex; justify-content: space-between; align-items: center;
+    position:relative;
 }
 
 .two_section a{
@@ -364,6 +365,15 @@ header{
 .two_section_box5{
     width:19vw; height:50vh;
     text-align: center;
+
+}
+
+.two_section_box:hover img,
+.two_section_box2:hover img,
+.two_section_box3:hover img,
+.two_section_box4:hover img,
+.two_section_box5:hover img{
+    filter:opacity(0.5) drop-shadow(0 0 0 black)
 }
 
 .two_section_box img,
@@ -372,6 +382,7 @@ header{
 .two_section_box4 img,
 .two_section_box5 img{
     width:100%; height:30vh;
+    transition:all 0.35s ease;
 }
 
 .tsb_text,
@@ -422,16 +433,61 @@ header{
     padding-top:10%;
 }
 
+#prev, #next{
+    position:absolute;
+    font-size:4vw;
+    background:rgba(13, 13, 13, 0.5);
+    text-align: center;
+    cursor:pointer;
+    font-family: 'Pretendard-Regular';
+    transition:all 0.35s ease;
+    padding-bottom:1%;
+}
+
+#prev:hover,
+#next:hover{
+    background:rgba(8, 75, 167, 0.5);
+    color:#e5e5e5;
+}
+
+#prev{
+    left:0;
+    border-radius: 0 20% 20% 0;
+}
+
+#next{
+    right:0;
+    border-radius: 20% 0 0 20%;
+}
+
 .two_section_box_modal{
     width:100%; height:100%;
     position:fixed; top:50%; left:50%;
     transform:translate(-50%, -50%);
-    background-color:black;
+    background:rgba(0, 0, 0, 0.9);
+    display:none;
+}
+
+#cancle{
+    width:3vw; height:5vh;
+    position:absolute; right:15%; top:10%;
+    filter:invert(1);
+    cursor:pointer;
+}
+.tsb_modal_content{
+    width:65%; height:35vh;
+    display:flex; justify-content: space-evenly; align-items: center; flex-flow:column wrap;
+    margin:0 auto; margin-top:15%;
+}
+.tsb_modal_content p{
+    color:white;
 }
 
 .tsb_modal_content img{
-    width:30vw; height:30vh;
+    width:25vw; height:30vh;
 }
+
+
 
 
 
