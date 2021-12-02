@@ -1,17 +1,37 @@
 
 html, body{
-    width:100%; height:100%;
+    width:100vw; height:100vh;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    overflow:hidden;
+}
+
+body{
+    background: linear-gradient(to right, #c2c4b6, #f7f0c6, #dadada, #abb6c8, #5d7599);
+    background-size: 400% 400%;
+    animation: gd 15s ease infinite;
+}
+
+@keyframes gd{
+    0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+}
+
+#logo{
+    position:fixed; right:3%; top:3%; z-index:20;
 }
 
 header{
     width:100%; height:8vh;
     background-color:transparent;
     display:flex; justify-content: center;
-    position:absolute; z-index:2;
-    opacity:0.9;
+    position:absolute; z-index:2; top:0; left:0;
 }
 
 .small_menu_icon{display:none;}
@@ -19,9 +39,10 @@ header{
 .menu_icon_image{width:30px; height:30px;}
 
 .main_menu{
-    width:70%; height:8vh;
-    display:flex; justify-content: space-evenly;
+    width:100%; height:8vh;
+    display:flex; 
     margin:0 auto;
+    position:fixed;
 }
 
 .main_menu a{text-decoration: none; color:black;}
@@ -29,11 +50,33 @@ header{
 #main1{font-family: 'TmoneyRoundWindRegular';  font-weight:normal; width:auto; text-align: center;}
 #main1 a{font-weight:bold; color:#084ba7; line-height:8vh; font-size:1vw;}
 
-#main2, #main3, #main4, #main5{
-    width:8vw;
+#main1, #main2,#main3, #main4, #main5{
+    width:8vw; height:8vh;
     font-family:'TmoneyRoundWindRegular';
     text-align:center;
+    position:relative;
 }
+.main2_large::after, 
+.main3_large::after,
+.main4_large::after,
+.main5::after{
+    content:'';
+    display:block;
+    transform: scale(0);
+    border-bottom: 2px solid black;
+    transition:0.35s;
+}
+
+#main2:hover .main2_large::after,
+#main3:hover .main3_large::after,
+#main5:hover .main5::after{
+    transform: scale(1);
+}
+
+#main3:hover .main3_large::after{
+    width:100%;
+}
+
 #main2_small, #main3_small, #main4_small{
     display:none; 
     background-color:white;
@@ -41,9 +84,9 @@ header{
 
 .main2_large, .main3_large, .main4_large, #main5{
     line-height:8vh; 
-    font-size:0.8vw;
+    font-size:1vw; font-weight: bold;
 }
-#main2_small a, #main3_small a, #main4_small a{
+#main2_small li a, #main3_small a, #main4_small a{
     padding:15px; 
     border-left:1px solid #084ba7;
     display:block; 
@@ -74,15 +117,15 @@ header{
 }
 
 #slider{
-    width:100vw; height:100vh;
-    animation: slide ease 2s 1;
-    overflow:hidden; overflow-x:scroll;
+    overflow:hidden;
+    width:100%; height:100%;
 }
 
 .show_text{
     width:40vw; height:100vh;
     display:table-cell; vertical-align: middle;
-    margin-top:4.5%; padding-top:13%; padding-left:2%;
+    margin-top:2%; padding-top:13%; padding-left:2%;
+    position:relative;
 }
 
 .show_text span{
@@ -103,18 +146,19 @@ header{
     transition:all 1s ease;
 }
 
-.show_text h3{
-    font-size:2vw; font-family: 'TmoneyRoundWindExtraBold';
-    transform: translateX(-50%);
-    transition:all 2s ease;
-}
-
 .show_text h2{
     font-size:1.5vw; font-family: 'TmoneyRoundWindExtraBold';
     margin-top:5%;
     transform: translateX(-50%);
     transition:all 2s ease;
 }
+
+.show_text h3{
+    font-size:2vw; font-family: 'TmoneyRoundWindExtraBold';
+    transform: translateX(-50%);
+    transition:all 2s ease;
+}
+
 
 .show_text > div{
     display:flex;
@@ -156,14 +200,14 @@ header{
 
 .show_image img{
     width:20vw; height:70vh;
-    margin-top:5%; margin-right:5%;
+    margin-top:5%; margin-right:3%;
     border-radius: 3%;
     position:relative;
 }
 
 .show_image > div{
     width:20vw; height:70vh;
-    margin-top:4%; margin-right:5%;
+    margin-top:4%; margin-right:3%;
     border-radius: 3%;
     position:relative;
 }
@@ -176,7 +220,6 @@ header{
     width:43vw; height:100vh;
     line-height:100vh;
     font-family: 'TmoneyRoundWindExtraBold'; font-size:2vw;
-    
 }
 
 .small_show_text span{
@@ -526,6 +569,16 @@ header{
 
 .two_section > div:hover img{
     transform: translateX(-10px);
+}
+
+.two_section > .icon{
+    width:15vw; height:5vh;
+    margin-top:8%; 
+    font-family: 'TmoneyRoundWindRegular';
+}
+
+.two_section > .icon img{
+    width:1.2vw; height:2vh;
 }
 
 
