@@ -9,6 +9,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <link href="css/media_min-width1000px.css" rel="stylesheet">
+    <link href="css/media_min-width600px_max-width999px.css" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
 
@@ -47,12 +49,6 @@
                             <img id="can1" src="img/cancel.png" alt="">
                         </div>
                     <div id="underline2"></div>
-                    <div class="large1_text">
-                        <h2>TV</h2>
-                        <h3>Media</h3>
-                        <h4>Clients</h4>
-                        <h5>Contact</h5>
-                    </div>
                 </div>
     
                 <div class="large2" id="overlay2">
@@ -99,10 +95,6 @@
                         </div>
                     <div id="underline2"></div>
                 </div>
-    
-                <div class="large5" id="overlay5">
-                    <h1>Fan art</h1>
-                </div>
         </header>
     
         <div id="slider">
@@ -125,9 +117,7 @@
     
             <div class="large_slide_image">
                 <div class="show_image">
-                    <div>
-                        <img src="img/20211202_141515918.jpg" alt="">
-                    </div>
+                    <img src="img/20211202_141515918.jpg" alt="">
                     <img src="img/20211202_141515918_02.jpg" alt="">
                     <img src="img/20211202_141515918_01.jpg" alt="">
                     <img src="img/20211202_141515918_03.jpg" alt="">
@@ -324,24 +314,29 @@
 
     <script>
         
-        ScrollReveal().reveal('.two_section_box', {delay: 530});
-        ScrollReveal().reveal('.two_section_box2', {delay: 560});
-        ScrollReveal().reveal('.two_section_box3', {delay: 590});
-        ScrollReveal().reveal('.two_section_box4', {delay: 620});
-        ScrollReveal().reveal('.two_section_box5', {delay: 650});
-        ScrollReveal().reveal('.two_section_box6', {delay: 680});
-        
-        $('#slider').flickity({
-        cellAlign: 'right',
-        contain: true
-
-        });       
-
-        function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
+        var windowWidth = window.matchMedia('screen and (min-width:1000px)');
+        if(windowWidth.matches){
+            $('#slider').flickity({
+            cellAlign: 'right',
+            contain: true
+            });
+            
+            $(function(){
+            $("#slider").on('mousewheel',function(e){
+            var wheelDelta = e.originalEvent.wheelDelta;
+            var sL = e.originalEvent.scrollLeft;
+                if(wheelDelta > 0){
+                    console.log("up");
+                    $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+                }
+                else{
+                    console.log("down");
+                    $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+                    }
+                });
+            });
         }
 
-        
     </script>
 </body>
 </html>

@@ -1,0 +1,591 @@
+
+
+@media(min-width:1000px){
+    .menu_home{
+        padding-right:5%; padding-left:1%;
+        font-size:1.3vw;
+        display:inline-block;
+        cursor:pointer;
+    }
+        .menu_home::after{
+            display:block;
+            content:'';
+            border-bottom: 2px solid black;
+            transition:all 0.35s ease;
+            transform:scaleX(0); transform-origin: 0% 50%;
+        }
+            .menu_home:hover::after{
+                transform:scaleX(1)
+            }
+    
+header{
+    width:100%; height:calc(100vh - 90vh);
+}
+
+    .small{
+        width:100%; height:calc(100vh - 90vh);
+        display:flex; align-items: center; justify-content: flex-start;
+        font-family: 'TmoneyRoundWindRegular'; font-weight: bold;
+    }        
+        .small a{
+            text-decoration: none;
+            padding-right:5%;
+            color:black;
+            font-size:1.3vw;
+            display:inline-block;
+            cursor:pointer;
+        }
+            .small a::after{
+                display:block;
+                content:'';
+                border-bottom: 2px solid black;
+                transform: scaleX(0);
+                transform-origin: 0% 50%;
+                transition:all 0.35s ease;
+            }
+                .small a:hover:after{
+                    transform:scaleX(1); 
+                }
+                    .small_menu{
+                        width:100%;
+                        display:block;
+                    }
+    
+                    .small_menu a{
+                        display:inline-block;
+                    }
+    
+    #overlay1,
+    #overlay2,
+    #overlay3,
+    #overlay4{
+        display:none;
+        transition:all 1s ease;
+        width:100%;
+        height:calc(100vh - 10vh); 
+        position:relative; bottom:0; left:0; z-index:55;
+        backdrop-filter: blur(5px);
+    }
+        #overlay1 h1,
+        #overlay2 h1,
+        #overlay3 h1,
+        #overlay4 h1{
+            font-size:5vw; font-family: 'TmoneyRoundWindRegular';
+            padding-left:5%;
+        }
+            .nav1 a,
+            .nav2 a,
+            .nav3 a,
+            .nav4 a{
+                font-family: 'TmoneyRoundWindRegular'; font-size:3.5vw;
+                color:black;
+                padding:1% 0 1% 35%;
+                text-decoration: none;
+                display:inline-block;
+            }
+                .nav1 a::after,
+                .nav2 a::after,
+                .nav3 a::after,
+                .nav4 a::after{
+                    display:block;
+                    content: '';
+                    border-bottom:4px solid black;
+                    transform-origin: 0% 50%; transform:scaleX(0);
+                    transition:all 0.35s ease;
+                }
+                    .nav1 a:hover::after,
+                    .nav2 a:hover::after,
+                    .nav3 a:hover::after,
+                    .nav4 a:hover::after{
+                        transform:scaleX(1)
+                    }
+                        .nav4 a{
+                            font-family: 'TmoneyRoundWindRegular'; font-size:2vw; font-weight:bold;
+                            color:black;
+                            text-decoration: none;
+                            padding:1% 0 1% 35%;
+                        }
+                        .nav4 li:nth-of-type(1){
+                            padding-top:1.5%;
+                        }
+                        .nav4 li{
+                            height:6vh;
+                        }
+                            .nav1 li:nth-of-type(1),
+                            .nav2 li:nth-of-type(1),
+                            .nav3 li:nth-of-type(1){
+                                padding-top:3%;
+                            }
+                                .nav1 li,
+                                .nav2 li,
+                                .nav3 li{
+                                    height:10vh;
+                                }
+                                    #underline{
+                                        width:90vw; height:0.3vh; 
+                                        background-color:black;
+                                        margin:0 auto; margin-top:1%;
+                                    }
+                                    #underline2{
+                                        width:60vw; height:0.3vh;
+                                        background-color:black;
+                                        position:absolute; right:5%; bottom:15%;
+                                    }
+    
+                                        #can1,
+                                        #can2,
+                                        #can3,
+                                        #can4{
+                                            width:3vw; height:5vh;
+                                            position:absolute; right:5%; top:0;
+                                            cursor:pointer;
+                                            transition:1s;
+                                        }
+
+#slider{
+    overflow:hidden;
+    width:100%; height:calc(100vh - 10vh);
+    }
+    
+    .show_text{
+        width:40vw; height:100vh;
+        display:table-cell; vertical-align: middle;
+        padding-top:10%; padding-left:2%;
+        position:relative; z-index:25;
+    }
+        .show_text h1{
+            color:black;
+            font-size:5vw; font-family: 'TmoneyRoundWindExtraBold';
+            white-space: nowrap;
+            transform: translateX(-50%);
+            transition:all 1s ease;
+        }
+            .show_text span{
+                transition:all 0.35s ease;
+                cursor: default;
+                color:rgba(0,0,0,0); 
+                -webkit-text-stroke: 1px black;
+                text-shadow:5px 5px black;
+            }
+            .show_text span:hover{
+                color:#084ba7;
+                text-shadow: 3px 3px #fa620c;
+            }
+                .show_text #testimage{
+                    width:15vw; height:30vh;
+                    position:absolute; top:15%; right:23%; z-index:-1;
+                    transform: translateX(-25%);
+                    opacity:0;
+                    transition:all 1s ease;
+                }
+                    .show_text h2{
+                        font-size:1.5vw; font-family: 'TmoneyRoundWindExtraBold';
+                        margin-top:5%;
+                        transform: translateX(-50%);
+                        transition:all 2s ease;
+                    }
+                        .show_text h3{
+                            font-size:2vw; font-family: 'TmoneyRoundWindExtraBold';
+                            transform: translateX(-50%);
+                            transition:all 2s ease;
+                        }
+                            .show_text > div{
+                                display:flex;
+                                margin-top:5%;
+                                cursor:pointer;
+                                transform: translateX(-50%);
+                                transition:all 3.5s ease;
+                            }
+                            .show_text > div a{
+                                text-decoration: none;
+                                color:black;
+                            }
+                            .show_text > div:hover img{
+                                transform: translateX(-10px);
+                            }
+                            .show_text > div h4{
+                                font-size:1vw; font-family: 'TmoneyRoundWindRegular'; font-weight:normal;
+                                line-height:5vh;
+                            }
+                            .show_text div img{
+                                width:2vw; height:5vh;
+                                transition:all 0.35s ease;
+                            }
+.large_slide_image{
+    width:90vw; height:calc(100vh - 10vh);
+    display:flex; flex-flow:column wrap;
+    }
+        .show_image{
+            display:flex;
+        }
+            .show_image img{
+                width:20vw; height:70vh;
+                margin-top:5%; margin-right:3%;
+                border-radius: 3%;
+                position:relative;
+            }
+                .show_image > div{
+                    width:20vw; height:70vh;
+                    margin-top:4%; margin-right:3%;
+                    border-radius: 3%;
+                    position:relative;
+                }
+                    .show_image > div p{
+                        position:absolute; top:10%; left:0;
+                    }
+    
+    .small_show_text{
+        width:34vw; height:calc(100vh - 10vh);
+        line-height:90vh;
+        font-family: 'TmoneyRoundWindExtraBold'; font-size:2vw;
+        margin-left:5%;
+    }
+    
+        .small_show_text span{
+            transition:all 0.35s ease;
+            cursor:default;
+            color:rgba(0,0,0,0); 
+            -webkit-text-stroke: 1px black;
+            text-shadow:5px 5px black;
+        }
+    
+            .small_show_text span:hover{
+                color:#fa620c;
+                text-shadow:3px 3px #084ba7;
+            }
+    
+                #latest{
+                    width:15vw; height:30vh;
+                    position:absolute; top:28%; left:20%; z-index:-1;
+                    transform:translateX(-25%);
+                    transition:all 1s ease;
+                    opacity:0;
+                }
+    
+                
+    .one_section{
+        width:80vw; height:calc(100vh - 10vh);
+        margin:0 auto;
+        display:flex; justify-content: space-evenly;
+    }
+    
+    .one_section_box{
+        width:30%; height:calc(100vh - 10vh); 
+    }
+    
+        .sauce{
+            margin-bottom:20px;
+        }
+            .sauce p{
+                font-family: 'Pretendard-Regular'; font-size:2vw;
+                margin-bottom:10px;
+            }
+                .sauce img{
+                    width:100%; height:30vh;
+                }
+    
+        .choco{
+            margin-bottom:20px;
+        }
+            .choco img{
+                width:100%; height:20vh;
+            }
+    
+        .card{
+            position:relative;
+        }
+            .card img{
+                width:90%; height:25vh;
+                float:right;
+            }
+                .card p{
+                    font-family: 'Pretendard-Regular'; font-size:1.2vw; font-weight: normal;
+                    transform:rotate(90deg); transform-origin: left top;
+                    white-space: nowrap;
+                    position: absolute; left:8%;
+                }
+    
+    
+    .one_section_box2{
+        width:30%; height:calc(100vh - 10vh); 
+    }
+        .bird{
+            text-align:center;
+            margin-bottom:20px;
+        }
+            .bird p{
+                font-size:5vw; font-weight: bold; font-family: 'Pretendard-Regular';
+                color:#084ba7;
+            }
+                .bird span{
+                    font-size:2vw; font-family: 'Pretendard-Regular';
+                    text-transform: uppercase;
+                }
+                    .bird img{
+                        width:100%; height:25vh;
+                    }
+    
+        .gun{ 
+            width:100%;
+            position:relative;
+            margin-bottom:20px;
+        }
+            .gun img{
+                width:85%; height:20vh;
+            }
+                .gun p{
+                    transform:rotate(-90deg);
+                    position:absolute; right:0%; top:10%;
+                    font-size:2vw;  font-family: 'Pretendard-Regular';
+                }
+                    .glass{
+                        position:relative;
+                    }
+                        .glass p{
+                            font-family: 'Pretendard-Regular'; font-size:1.2vw; font-weight: normal;
+                            transform:rotate(90deg);
+                            position: absolute; 
+                            white-space: nowrap;
+                        }
+                            .glass img{
+                                width:85%; height:20vh;
+                                float:right;
+                            }
+    
+    
+    .one_section_box3{
+        width:30%; height:calc(100vh - 10vh); 
+    }
+        .diamond{
+            margin-bottom:20px;
+        }
+            .diamond img{
+                width:100%; height:30vh;
+            }
+                .diamond p{
+                    font-family: 'Pretendard-Regular'; font-size:2vw;
+                    margin-top:10px;
+                }
+    
+        .grape img{
+            width:100%; height:47.5vh;
+        }
+    
+    
+    
+    .small_slide_image{
+        width:80vw; height:calc(100vh - 10vh); 
+        display:flex; flex-flow:row wrap; justify-content: space-evenly; align-items: center;
+        position:relative;
+    }
+        .small_slide_image h1{
+            position:absolute; top:6%; left:6%;
+            color:white;
+            font-size:15vw; font-family: 'TmoneyRoundWindExtraBold';
+            color:rgba(0,0,0,0); 
+            -webkit-text-stroke: 1px black;
+            text-shadow: 10px 10px #084ba7,
+                        15px 15px #fa620c;
+        }
+            .small_slide_image h1:nth-of-type(2){
+                position:absolute; top:40%; left:45%;
+            }
+    
+        .image{
+            width:50vw; height:calc(100vh - 10vh); 
+            display:flex; flex-flow:row wrap; justify-content: space-evenly; align-items: center;
+        }
+            .small1,
+            .small2,
+            .small3,
+            .small4,
+            .small5,
+            .small6,
+            .small7,
+            .small8,
+            .small9,
+            .small10,
+            .small11,
+            .small12{
+                width:12vw; height:19vh;
+                transition:all 0.3s ease;
+                position:relative;
+                background:rgba(0, 0, 0, 1);
+                overflow:hidden;
+            }
+                .small1 img,
+                .small2 img,
+                .small3 img,
+                .small4 img,
+                .small5 img,
+                .small6 img,
+                .small7 img,
+                .small8 img,
+                .small9 img,
+                .small10 img,
+                .small11 img,
+                .small12 img{
+                    width:12vw; height:19vh;
+                    transition:all 0.3s ease;
+                    transform: scale(1);
+                }
+                    .small1_text,
+                    .small2_text,
+                    .small3_text,
+                    .small4_text,
+                    .small5_text,
+                    .small6_text,
+                    .small7_text,
+                    .small8_text,
+                    .small9_text,
+                    .small10_text,
+                    .small11_text,
+                    .small12_text{
+                        background:rgba(0, 0, 0, 0.8);
+                        transition:all 1s ease;
+                        color:#e5e5e5;
+                        opacity:0;
+                    }
+                        .small1_text h3,
+                        .small2_text h3,
+                        .small3_text h3,
+                        .small4_text h3,
+                        .small5_text h3,
+                        .small6_text h3,
+                        .small7_text h3,
+                        .small8_text h3,
+                        .small9_text h3,
+                        .small10_text h3,
+                        .small11_text h3,
+                        .small12_text h3{
+                            font-size:1.2em;  font-family: 'Pretendard-Regular';
+                            position:absolute; top:0; left:0;
+                            transform: translate(45px);
+                            transition:all 1s ease;
+                        }
+                            .small1_text p,
+                            .small2_text p,
+                            .small3_text p,
+                            .small4_text p,
+                            .small5_text p,
+                            .small6_text p,
+                            .small7_text p,
+                            .small8_text p,
+                            .small9_text p,
+                            .small10_text p,
+                            .small11_text p,
+                            .small12_text p{
+                                position:absolute; right:0; bottom:0%;
+                                transition:all 1s ease;
+                                transform:translateX(-45px);
+                                font-family: 'Pretendard-Regular';
+                            }
+    
+                                .small1:hover .small1_text,
+                                .small2:hover .small2_text,
+                                .small3:hover .small3_text,
+                                .small4:hover .small4_text,
+                                .small5:hover .small5_text,
+                                .small6:hover .small6_text,
+                                .small7:hover .small7_text,
+                                .small8:hover .small8_text,
+                                .small9:hover .small9_text,
+                                .small10:hover .small10_text,
+                                .small11:hover .small11_text,
+                                .small12:hover .small12_text{
+                                    opacity:1;
+                                }
+                                    .small1:hover img,
+                                    .small2:hover img,
+                                    .small3:hover img,
+                                    .small4:hover img,
+                                    .small5:hover img,
+                                    .small6:hover img,
+                                    .small7:hover img,
+                                    .small8:hover img,
+                                    .small9:hover img,
+                                    .small10:hover img,
+                                    .small11:hover img,
+                                    .small12:hover img{
+                                        transform: scale(1.2);
+                                        opacity:0.5;
+                                    }
+                                            .small1:hover h3,
+                                            .small2:hover h3,
+                                            .small3:hover h3,
+                                            .small4:hover h3,
+                                            .small5:hover h3,
+                                            .small6:hover h3,
+                                            .small7:hover h3,
+                                            .small8:hover h3,
+                                            .small9:hover h3,
+                                            .small10:hover h3,
+                                            .small11:hover h3,
+                                            .small12:hover h3,
+                                            .small1:hover p,
+                                            .small2:hover p,
+                                            .small3:hover p,
+                                            .small4:hover p,
+                                            .small5:hover p,
+                                            .small6:hover p,
+                                            .small7:hover p,
+                                            .small8:hover p,
+                                            .small9:hover p,
+                                            .small10:hover p,
+                                            .small11:hover p,
+                                            .small12:hover p{
+                                                transform: translate(0px);
+                                            }
+    
+    .two_section{
+        width:80vw; height:calc(100vh - 10vh); 
+    }
+        .two_section h1{
+            line-height:40vh; height:30vh;
+            font-family: 'TmoneyRoundWindExtraBold'; font-size:2.5vw;
+        }
+        .two_section h1 img{
+            width:2vw;
+        }
+            .two_section > div h2{
+                line-height:6vh; font-family: 'TmoneyRoundWindRegular';  font-weight:normal;
+                color:black;
+            }
+                .two_section > div a{
+                    text-decoration: none;
+                }
+    
+    .ai1, .ai2, .ai3{
+        width:20vw;
+        display:flex;
+    }
+    .ai2{
+        width:25vw;
+    }
+        .ai1 img, .ai2 img, .ai3 img{
+            width:3vw; height:6vh;
+            transition:all 0.35s ease;
+        }
+    
+            .ai1:hover #ar,
+            .ai2:hover #ar2,
+            .ai3:hover #ar3{
+                transform: translateX(-10px);
+            }
+    
+    .clients{
+        width:80vw; height:10vh;
+        margin-top:10%;
+    }
+        .clients h3{
+            height:5vh;
+            font-size:1vw; font-family: 'TmoneyRoundWindRegular';
+        }
+            .clients_image{
+                display:flex;
+            }
+            .clients_image img{
+                width:10vw; height:7vh;
+                margin-right:5%;
+            }
+}

@@ -3,3 +3,39 @@
 *{margin:0; padding:0;}
 
 ul, li, ol{list-style:none; margin:0; padding:0;}
+
+
+
+html, body{
+    width:100vw; height:100vh;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(to right, #ffdc7c, #dd614a, #ff9b71, #6ba292, #5d7599);
+    background-size: 400% 400%;
+    animation: gd 15s ease infinite;
+}
+
+@keyframes gd{
+    0% {
+        background-position: 0% 50%;
+        }
+    50% {
+        background-position: 100% 50%;
+        }
+    100% {
+        background-position: 0% 50%;
+        }
+}
+
+    #logo{
+        position:fixed; right:3%; top:3%; z-index:20;
+    }
+    
+    #wrap{
+        width:100vw; height:100vh;
+        
+    }
