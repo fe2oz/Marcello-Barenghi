@@ -1,146 +1,23 @@
-
-
-@media(min-width:1000px){
-    .menu_home{
-        padding-right:5%; padding-left:1%;
-        font-size:1.3vw;
-        display:inline-block;
-        cursor:pointer;
-    }
-        .menu_home::after{
-            display:block;
-            content:'';
-            border-bottom: 2px solid black;
-            transition:all 0.35s ease;
-            transform:scaleX(0); transform-origin: 0% 50%;
-        }
-            .menu_home:hover::after{
-                transform:scaleX(1)
-            }
-    
-header{
-    width:100%; height:calc(100vh - 90vh);
+body{
+    background: linear-gradient(to right, #f5f6f1, #f1ede4, #c3c5c4, #e0e1e6, #b0a8a6);
+    background-size: 400% 400%;
+    animation: gd 15s ease infinite;
 }
 
-    .small{
-        width:100%; height:calc(100vh - 90vh);
-        display:flex; align-items: center; justify-content: flex-start;
-        font-family: 'TmoneyRoundWindRegular'; font-weight: bold;
-    }        
-        .small a{
-            text-decoration: none;
-            padding-right:5%;
-            color:black;
-            font-size:1.3vw;
-            display:inline-block;
-            cursor:pointer;
+@keyframes gd{
+    0% {
+        background-position: 0% 50%;
         }
-            .small a::after{
-                display:block;
-                content:'';
-                border-bottom: 2px solid black;
-                transform: scaleX(0);
-                transform-origin: 0% 50%;
-                transition:all 0.35s ease;
-            }
-                .small a:hover:after{
-                    transform:scaleX(1); 
-                }
-                    .small_menu{
-                        width:100%;
-                        display:block;
-                    }
-    
-                    .small_menu a{
-                        display:inline-block;
-                    }
-    
-    #overlay1,
-    #overlay2,
-    #overlay3,
-    #overlay4{
-        display:none;
-        transition:all 1s ease;
-        width:100%;
-        height:calc(100vh - 10vh); 
-        position:relative; bottom:0; left:0; z-index:55;
-        backdrop-filter: blur(5px);
-    }
-        #overlay1 h1,
-        #overlay2 h1,
-        #overlay3 h1,
-        #overlay4 h1{
-            font-size:5vw; font-family: 'TmoneyRoundWindRegular';
-            padding-left:5%;
+    50% {
+        background-position: 100% 50%;
         }
-            .nav1 a,
-            .nav2 a,
-            .nav3 a,
-            .nav4 a{
-                font-family: 'TmoneyRoundWindRegular'; font-size:3.5vw;
-                color:black;
-                padding:1% 0 1% 35%;
-                text-decoration: none;
-                display:inline-block;
-            }
-                .nav1 a::after,
-                .nav2 a::after,
-                .nav3 a::after,
-                .nav4 a::after{
-                    display:block;
-                    content: '';
-                    border-bottom:4px solid black;
-                    transform-origin: 0% 50%; transform:scaleX(0);
-                    transition:all 0.35s ease;
-                }
-                    .nav1 a:hover::after,
-                    .nav2 a:hover::after,
-                    .nav3 a:hover::after,
-                    .nav4 a:hover::after{
-                        transform:scaleX(1)
-                    }
-                        .nav4 a{
-                            font-family: 'TmoneyRoundWindRegular'; font-size:2vw; font-weight:bold;
-                            color:black;
-                            text-decoration: none;
-                            padding:1% 0 1% 35%;
-                        }
-                        .nav4 li:nth-of-type(1){
-                            padding-top:1.5%;
-                        }
-                        .nav4 li{
-                            height:6vh;
-                        }
-                            .nav1 li:nth-of-type(1),
-                            .nav2 li:nth-of-type(1),
-                            .nav3 li:nth-of-type(1){
-                                padding-top:3%;
-                            }
-                                .nav1 li,
-                                .nav2 li,
-                                .nav3 li{
-                                    height:10vh;
-                                }
-                                    #underline{
-                                        width:90vw; height:0.3vh; 
-                                        background-color:black;
-                                        margin:0 auto; margin-top:1%;
-                                    }
-                                    #underline2{
-                                        width:60vw; height:0.3vh;
-                                        background-color:black;
-                                        position:absolute; right:5%; bottom:15%;
-                                    }
-    
-                                        #can1,
-                                        #can2,
-                                        #can3,
-                                        #can4{
-                                            width:3vw; height:5vh;
-                                            position:absolute; right:5%; top:0;
-                                            cursor:pointer;
-                                            transition:1s;
-                                        }
+    100% {
+        background-position: 0% 50%;
+        }
+}
+
+@media(min-width:1000px){
+
 
 #slider{
     overflow:hidden;
