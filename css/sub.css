@@ -1,7 +1,7 @@
 
-
 html, body{
-    overflow-y:auto;
+    height:100%;
+    overflow-y: auto;
     background-color:#e0e1e6;
 }
 
@@ -48,18 +48,39 @@ header{
     height:auto;
 }
 
-.two_section{
-    width:100%; height:auto;
-    background-color:lightblue;
+.ts1,
+.ts2,
+.ts3,
+.ts4,
+.ts5,
+.ts6,
+.ts7,
+.ts8{
+    width:100%;
+    display:flex; justify-content: space-between;
+    margin-bottom: 5%;
 }
 
-.two_section img{
-    width:18vw; height:30vh;
-    margin-bottom:5%;
+.ts1 img,
+.ts2 img,
+.ts3 img,
+.ts4 img,
+.ts5 img,
+.ts6 img,
+.ts7 img,
+.ts8 img{
+    width:17vw; height:30vh;
+    transition:0.25s;
 }
-
-#ts1{
-    float:left;
+.ts1 img:hover,
+.ts2 img:hover,
+.ts3 img:hover,
+.ts4 img:hover,
+.ts5 img:hover,
+.ts6 img:hover,
+.ts7 img:hover,
+.ts8 img:hover{
+    transform: scale(1.2);
 }
 
 
