@@ -4,6 +4,13 @@ body{
     animation: gd 15s ease infinite;
 }
 
+html, body{
+    width:100vw; height:100vh;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
 @keyframes gd{
     0% {
         background-position: 0% 50%;

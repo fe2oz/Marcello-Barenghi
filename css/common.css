@@ -4,16 +4,6 @@
 
 ul, li, ol{list-style:none; margin:0; padding:0;}
 
-
-
-html, body{
-    width:100vw; height:100vh;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    overflow: hidden;
-}
-
-
     #wrap{
         width:100vw; height:100vh;
     }
@@ -22,7 +12,7 @@ html, body{
 @media(min-width:1000px){
 
     #logo{
-        position:fixed; right:3%; top:3%; z-index:20;
+        position:absolute; right:3%; top:3%;
     }
 
     #logo_menu{
@@ -186,6 +176,7 @@ header{
     #logo{
         position:absolute;
         right:3%;
+        width:10vw;
     }
 
     header{
@@ -340,6 +331,7 @@ header{
     }
 
     #logo{
+        width:20vw;
         position:absolute;
         right:3%;
     }
@@ -443,7 +435,7 @@ header{
                         transform:scaleX(1)
                     }
                         .nav4 a{
-                            font-family: 'TmoneyRoundWindRegular'; font-size:2vw; font-weight:bold;
+                            font-family: 'TmoneyRoundWindRegular'; font-size:3vw; font-weight:bold;
                             color:black;
                             text-decoration: none;
                             padding:1% 0 1% 35%;
@@ -479,7 +471,7 @@ header{
                                         #can2,
                                         #can3,
                                         #can4{
-                                            width:4vw; height:5vh;
+                                            width:5vw; height:4vh;
                                             position:absolute; right:5%; top:0;
                                             cursor:pointer;
                                             transition:1s;
