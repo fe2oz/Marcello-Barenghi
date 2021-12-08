@@ -1,0 +1,31 @@
+html, body{
+    width:100%; height:100vh;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(to right, #f5f6f1, #f1ede4, #c3c5c4, #e0e1e6, #b0a8a6);
+    background-size: 400% 400%;
+    animation: gd 15s ease infinite;
+}
+
+@keyframes gd{
+    0% {
+        background-position: 0% 50%;
+        }
+    50% {
+        background-position: 100% 50%;
+        }
+    100% {
+        background-position: 0% 50%;
+        }
+}
+
+#wrap{
+    display:flex; flex-flow:row wrap;
+    overflow-y: scroll;
+    width:100%;
+}
+
