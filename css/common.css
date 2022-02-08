@@ -139,12 +139,12 @@ header{
                                 .nav3 li{
                                     height:10vh;
                                 }
-                                    #line{
+                                    .line{
                                         width:90vw; height:0.3vh; 
                                         background-color:black;
                                         margin:0 auto; margin-top:1%;
                                     }
-                                    #line2{
+                                    .line2{
                                         width:60vw; height:0.3vh;
                                         background-color:black;
                                         position:absolute; right:5%; bottom:15%;

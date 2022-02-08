@@ -47,7 +47,7 @@
 
                 <div class="large1" id="overlay1">
                     <h1>Shop</h1>
-                    <div id="line"></div>
+                    <div class="line"></div>
                         <div class="nav1">
                             <ul>
                                 <li><a href="#">Tutorials</a></li>
@@ -55,12 +55,12 @@
                             </ul>
                             <img id="can1" src="img/cancel.png" alt="">
                         </div>
-                    <div id="line2"></div>
+                    <div class="line2"></div>
                 </div>
     
                 <div class="large2" id="overlay2">
                     <h1>Portfolio</h1>
-                    <div id="line"></div>
+                    <div class="line"></div>
                         <div class="nav2">
                             <ul>
                                 <li><a href="#">Paintings</a></li>
@@ -71,12 +71,12 @@
                             </ul>
                             <img id="can2" src="img/cancel.png" alt="">
                         </div>
-                    <div id="line2"></div>
+                    <div class="line2"></div>
                 </div>
                 
                 <div class="large3" id="overlay3">
                     <h1>About</h1>
-                    <div id="line"></div>
+                    <div class="line"></div>
                         <div class="nav3">
                             <ul>
                                 <li><a href="#">Bio</a></li>
@@ -86,12 +86,12 @@
                             </ul>
                             <img id="can3" src="img/cancel.png" alt="">
                         </div>
-                    <div id="line2"></div>
+                    <div class="line2"></div>
                 </div>
     
                 <div class="large4" id="overlay4">
                     <h1>Archive</h1>
-                    <div id="line"></div>
+                    <div class="line"></div>
                         <div class="nav4">
                             <ul>
                                 <li><a href="#">2021</a></li>
@@ -106,7 +106,7 @@
                             </ul>
                             <img id="can4" src="img/cancel.png" alt="">
                         </div>
-                    <div id="line2"></div>
+                    <div class="line2"></div>
                 </div>
         </header>
     
@@ -339,11 +339,9 @@
             var wheelDelta = e.originalEvent.wheelDelta;
             var sL = e.originalEvent.scrollLeft;
                 if(wheelDelta > 0){
-                    console.log("up");
                     $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
                 }
                 else{
-                    console.log("down");
                     $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
                     }
                 });
